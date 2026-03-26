@@ -1,33 +1,34 @@
 # Graph Coloring using Backtracking
 
-## 📌 Problem Description
-Determine whether a graph can be colored using K colors such that no two adjacent vertices share the same color.
+## Problem Description
+Determine whether a graph can be colored using K colors so that no two adjacent vertices share the same color.
 
-## ⚙️ Algorithm
+## Algorithm
 - Use backtracking
-- Assign colors one by one
-- Check safety before assignment
-- Backtrack if conflict occurs
+- Assign colors vertex by vertex
+- Check whether a color is safe before assigning it
+- Backtrack when a conflict appears
 
-## ⏱️ Complexity
+## Complexity
 - Time: O(K^N)
 - Space: O(N)
 
-## ▶️ How to Run
-1. Open terminal
-2. Run:
-   python graph_coloring.py
+## Project Structure
+- `code/graph_coloring.py`
+- `input/case1.txt`
+- `input/case2.txt`
+- `output/`
 
-## 📂 Input Format
-First line: N M K  
-Next M lines: edges
+## Input Format
+- First line: `number_of_vertices number_of_edges number_of_colors`
+- Next M lines: edges written as `u v`
 
-## 📊 Output
-Case 1: Possible  
-Case 2: Not Possible
+## Run
+```bash
+python code/graph_coloring.py input/case1.txt
+python code/graph_coloring.py input/case2.txt
+```
 
-## 📸 Screenshots
-(attach images here)
-
-## 🔗 GitHub Repository
-(automatic, no need to add)
+## Output
+- Case 1: Coloring Possible
+- Case 2: Not Possible
